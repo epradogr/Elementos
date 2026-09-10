@@ -1,4 +1,2 @@
-# Elementos
 
-
-Práctica 1
+# Práctica 1
