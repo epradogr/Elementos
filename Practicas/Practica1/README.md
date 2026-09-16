@@ -1,3 +1,5 @@
+# Práctica 1
+Hacer un semáforo con la finalidad de entender el PULL UP y PULL DOWN y el uso de los GPIO
 <img width="1200" height="1600" alt="Image" src="https://github.com/user-attachments/assets/dcb9b7ee-9569-488c-9377-e8b2627dbe0e" />
 
 https://github.com/user-attachments/assets/7f12eddb-3c67-42eb-874d-45eb5ed69430
