@@ -1,3 +1,4 @@
+## Práctica 6 PWM
 En esta práctica se hizo uso de Pulse Width Modulation, que sirve para encender y apagar muy rápido para controlar energía promedio, cambiando el tiempo que la salida permanece encendida. Con la Raspberry lo conectamos a un puente H para poder demostrar su funcionamiento con un motor y junto con la Raspberry poder controlarlo, ya sea que vaya de reversa, hacia en frente o que frene, todo con aceleración en rampa. Para llevar a cabo esta cráctica usamos conceptos como:
 
 ### Duty cycle
