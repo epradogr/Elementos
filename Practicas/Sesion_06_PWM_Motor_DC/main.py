@@ -90,7 +90,7 @@ while True:
             
             print("Giro: REVERSE")
             reverse()
-            ramp_to(0, 75)  
+            ramp_to(0, 100)  
             estado = "REVERSE"
 
     # 3. Botón STOP
