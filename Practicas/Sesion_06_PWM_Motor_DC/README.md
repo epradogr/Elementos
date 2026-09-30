@@ -12,7 +12,6 @@ Se usa una rampa la cuál es un algoritmo por software con la función de ir pro
 ### ¿Por qué no invertimos dirección a alta velocidad? 
 Porque el pico de energía que se necesita para que alcance una alta velocidad es basante alto, si se invierte al instante se está forzando que el motor gire hacia la dirección contraria lo cuál tomará mucha más corriente, que provocará calentamiento y esfuerzo mecánico, algo que puede causar que se dañen nuestros componentes, por eso es mejor hacer una desaseleración de seguridad; siempre que se quiera invertir la dirección desacelerar primero para evitar problemas.
 
-### Tabla
 ### Tabla de Pruebas
 
 | Prueba (Test) | Comportamiento Esperado | Resultado |
