@@ -17,3 +17,7 @@ Finalmente, el programa toma el porcentaje de señal que obtuvimos y lo compara 
 | Warning | LED amarillo activo | PASS |
 | Alarm | LED rojo activo | PASS |
 | Recuperación | vuelve de ALARM a NORMAL al bajar señal | PASS |
+
+
+## Pregunta de análisis
+Porque las señales analógicas siempre presentan ruido eléctrico o fluctuaciones. Sin un filtro, un pico de voltaje momentáneo podría cruzar el umbral y disparar una falsa alarma. El filtro suaviza la señal, evitando que la alarma reaccione a estos errores temporales y haciéndola mucho más estable y confiable.
