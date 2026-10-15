@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "author": "Laboratorio de Elementos Programables I",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": -95,
+      "left": 185,
+      "attrs": {
+        "value": "512"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_normal",
+      "top": -40,
+      "left": 360,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_warning",
+      "top": 25,
+      "left": 360,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_alarm",
+      "top": 90,
+      "left": 360,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_heartbeat",
+      "top": 155,
+      "left": 360,
+      "attrs": {
+        "color": "blue"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -36,
+      "left": 305,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 29,
+      "left": 305,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 94,
+      "left": 305,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 159,
+      "left": 305,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_ack",
+      "top": 220,
+      "left": 240,
+      "attrs": {
+        "color": "gray",
+        "key": "A",
+        "bounce": "1"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "pico:3V3",
+      "pot1:VCC",
+      "red",
+      []
+    ],
+    [
+      "pico:GND.8",
+      "pot1:GND",
+      "black",
+      []
+    ],
+    [
+      "pico:GP26",
+      "pot1:SIG",
+      "green",
+      []
+    ],
+    [
+      "pico:GP13",
+      "r1:1",
+      "green",
+      []
+    ],
+    [
+      "r1:2",
+      "led_normal:A",
+      "green",
+      []
+    ],
+    [
+      "led_normal:C",
+      "pico:GND.5",
+      "black",
+      []
+    ],
+    [
+      "pico:GP14",
+      "r2:1",
+      "yellow",
+      []
+    ],
+    [
+      "r2:2",
+      "led_warning:A",
+      "yellow",
+      []
+    ],
+    [
+      "led_warning:C",
+      "pico:GND.5",
+      "black",
+      []
+    ],
+    [
+      "pico:GP15",
+      "r3:1",
+      "red",
+      []
+    ],
+    [
+      "r3:2",
+      "led_alarm:A",
+      "red",
+      []
+    ],
+    [
+      "led_alarm:C",
+      "pico:GND.5",
+      "black",
+      []
+    ],
+    [
+      "pico:GP12",
+      "r4:1",
+      "blue",
+      []
+    ],
+    [
+      "r4:2",
+      "led_heartbeat:A",
+      "blue",
+      []
+    ],
+    [
+      "led_heartbeat:C",
+      "pico:GND.5",
+      "black",
+      []
+    ],
+    [
+      "pico:GP16",
+      "btn_ack:1.l",
+      "green",
+      []
+    ],
+    [
+      "btn_ack:2.l",
+      "pico:GND.6",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
