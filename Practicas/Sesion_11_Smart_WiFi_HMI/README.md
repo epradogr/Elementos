@@ -2,7 +2,7 @@
 
 
 
-## Tabla de pruebas
+### Tabla de pruebas
 
 | Prueba | Resultado |
 |---|---|
@@ -15,5 +15,3 @@
 | `/api/status` — JSON correcto | PASS |
 | `/api/pwm?value=150` — Error 400 | PASS |
 | `/ruta-que-no-existe` — Error 404 | PASS |
-
-*
