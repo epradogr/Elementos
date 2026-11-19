@@ -2,34 +2,7 @@
 # DO11 - STARTER
 # SMART Wi-Fi HMI FINAL - TFT ST7735S
 # ================================================================
-#
-# RETO
-# ----
-# Construir una HMI web donde:
-#
-# 1) Un SLIDER web 0..100 controle el brillo del LED PWM (GP15).
-# 2) Un BOTÓN VIRTUAL cambie ON/OFF un segundo LED (GP14).
-# 3) La TFT ST7735S SPI muestre:
-#       IP
-#       PWM
-#       LED2
-#       número de requests
-# 4) /api/status entregue esos datos en JSON.
-#
-# ARCHIVOS EN LA RAÍZ DE LA PICO
-# ------------------------------
-# /secrets.py
-# /st7735s.py
-#
-# HARDWARE
-# --------
-# GP15 -> LED PWM
-# GP14 -> LED 2 digital
-# GP18 -> TFT SCL/SCK | GP19 -> TFT SDA/MOSI
-# GP20 -> TFT RES     | GP21 -> TFT DC
-# GP17 -> TFT CS      | VCC -> 3V3, GND -> GND
-# TFT BLK: conectar a 3V3 solo si el modulo admite alimentacion directa de luz
-# ================================================================
+# NOTA: se sustituyó el ssd1306 por OLED st7735s
 
 import network
 import socket
@@ -57,7 +30,6 @@ from st7735s import ST7735S
 
 # ================================================================
 # BLOQUE 1 - Wi-Fi
-# YA ESTÁ RESUELTO
 # ================================================================
 
 def get_sta_interface():
@@ -128,7 +100,6 @@ def connect_wifi(
 
 # ================================================================
 # BLOQUE 2 - SERVIDOR
-# YA ESTÁ RESUELTO
 # ================================================================
 
 def create_server(port=80):
@@ -283,7 +254,6 @@ def status_dict(ip):
 
 # ================================================================
 # BLOQUE 5 - HTML
-# YA ESTÁ DADO: ustedes implementan las rutas
 # ================================================================
 
 HTML_TEMPLATE = """<!doctype html>
@@ -534,7 +504,6 @@ def html_page(ip):
 
 # ================================================================
 # FUNCIÓN AUXILIAR - QUERY STRING
-# YA ESTÁ RESUELTA
 # ================================================================
 
 def split_target(target):
@@ -617,7 +586,6 @@ def route(target, ip):
 
 # ================================================================
 # BLOQUE 6 - RESPUESTA HTTP
-# YA ESTÁ RESUELTO
 # ================================================================
 
 def send_response(
@@ -691,7 +659,6 @@ last_wait = ticks_ms()
 
 # ================================================================
 # BLOQUE 8 - LOOP HTTP
-# YA ESTÁ RESUELTO
 # ================================================================
 
 while True:
